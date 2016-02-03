@@ -1,3 +1,5 @@
+<!-- all views wrapped by tis file -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +29,11 @@
             </div>
         </div>
     </nav>
+    <%= flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+    <<% end %>
     <%= yield %>
     
   <%= render 'partials/footer' %>
