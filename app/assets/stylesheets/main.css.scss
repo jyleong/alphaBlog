@@ -45,6 +45,14 @@ html, body, .cover {
 .cover-text a.btn.btn-danger.btn-lg:active {
 	background: black;
 }
+
+.article-actions {
+	border-top: 1px solid #eaeaea;
+	padding-top: 5px;
+}
+.description {
+	margin: 0;
+}
 footer {
 	background: #222;
 	color: white;
