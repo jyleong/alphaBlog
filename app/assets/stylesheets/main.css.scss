@@ -1,7 +1,19 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 html, body, .cover {
 	height: 80%;
 }
 
+#logo {
+	float: left;
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+#logo:hover {
+	color:hotpink;
+}
 .cover {
 	background: url("Night_Mountain.jpg") top left no-repeat;
 	background-size: cover;
