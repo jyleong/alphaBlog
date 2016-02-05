@@ -67,20 +67,19 @@ html, body, .cover {
 	
 }
 footer {
+	position: fixed;
 	background: #222;
 	color: white;
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 	font-family: Georgia, Times, serif;
 	width: 100%;
   bottom: 0;
-  position: relative;
-  margin-top: 100px;
+  
 }
 
 footer a {
 	color: hotpink;
-
 }
 
 /* Media Queries */
