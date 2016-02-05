@@ -37,10 +37,9 @@ class ArticlesController < ApplicationController
   end
   
   def destroy
-    
-    @article.destroy
-    flash[:danger] = "article was successfully destroyed"
-    redirect_to articles_path
+     @article.destroy
+     flash[:notice] = "Article was successfully deleted"
+     redirect_to articles_path
   end
   
   ## from params hash makes article from these two items
