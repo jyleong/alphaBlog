@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   
   post 'users', to: 'users#create'
   resources :users, except: [:new]
+  
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
