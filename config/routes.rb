@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   
   post 'users', to: 'users#create'
-  resources :user, except: [:new]
+  resources :users, except: [:new]
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
