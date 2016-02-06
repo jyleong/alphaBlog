@@ -13,8 +13,8 @@ class ApplicationController < ActionController::Base
   def logged_in?
     !!current_user ## return true if i have current user
   end
-  
-  def required_user
+  ## helps us restrict controller side
+  def require_user
     if !logged_in?
       flash[:danger] = "you must be logged in to perform that action"
       redirect_to root_path
