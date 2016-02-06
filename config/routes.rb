@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   
   resources :articles
+  
+  get 'signup', to: 'users#new'
+  
+  post 'users', to: 'users#create'
+  resources :user, except: [:new]
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
