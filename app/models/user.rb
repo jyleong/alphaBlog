@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :articles
+  has_many :articles, dependent: :destroy ## if destryed will destory all its artiocles
   before_save {self.email = email.downcase} ## before user hits db, email gets lowercased
   validates :username, presence: true, uniqueness: {case_sensitive: false}, length: {minimum: 3, maximum: 25}
   
