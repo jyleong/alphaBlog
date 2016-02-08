@@ -74,6 +74,18 @@ html, body, .cover {
 	list-style: none;
 	padding-left: 0;
 }
+
+.badge {
+	background-color: #CEF6F5;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.input_checkbox input {
+	width: auto !important;
+}
 footer {
 	position: fixed;
 	background: #222;
