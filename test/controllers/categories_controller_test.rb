@@ -33,4 +33,6 @@ class CategoriesControllerTest < ActionController::TestCase ## different subclas
     assert_redirected_to categories_path
   end
   
+  
+  
 end

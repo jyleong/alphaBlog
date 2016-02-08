@@ -32,4 +32,15 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     ## look for tiel and body from errors partials
     
   end
+  
+  test "should make proper article with categories" do
+    sign_in_as(@user, "password")
+    get new_article_path
+    assert_template 'articles/new'
+    assert_difference 'Article.count', 1 do
+      post articles_path, article: {title: "this article", description: "description of this article test", user_id: @user.id}
+    end
+    assert_template article_path(@article)
+    
+  end
 end
