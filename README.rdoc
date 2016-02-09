@@ -3,26 +3,24 @@
 THe repository for the alphaBlog app made while following
 the Complete Ruby on Rails Developer Course
 
-Things you may want to cover:
+This project has taught me how a project is built and structure using Ruby
+on Rails.
 
-* Ruby version
+Concepts I have learned:
 
-* System dependencies
+The Ruby on Rails CRUD operations
+Database and database migration 
+the MVC architecture in Ruby on Rails
+the route structure of a Ruby on Rails controller and view setup
+The association models of Ruby on Rails
+production and deployment using heroku
+Restricting actions on the UI and controller side of things
 
-* Configuration
+Some features of the alphaBlog:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ability to create users, articles and assign to different categories
+Viewing different sections of the website
+Different actions associated with the type of user you are (visitor, user, admin)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
