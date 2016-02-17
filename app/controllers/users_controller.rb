@@ -28,6 +28,10 @@ class UsersController < ApplicationController
   def edit
     
   end
+  
+  def my_friends
+    #@friendships = current_user.friends
+  end
 
   def update ## refer here for update and create
     

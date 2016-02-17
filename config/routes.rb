@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   
   resources :categories, except: [:destroy]
+  
+  get 'my_friends', to: 'users#my_friends'
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
