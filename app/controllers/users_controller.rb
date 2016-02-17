@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   end
   
   def my_friends
-    #@friendships = current_user.friends
+    @friendships = current_user.friends
   end
 
   def update ## refer here for update and create

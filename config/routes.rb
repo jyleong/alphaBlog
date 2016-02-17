@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :categories, except: [:destroy]
   
   get 'my_friends', to: 'users#my_friends'
+  resources :friendships
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
