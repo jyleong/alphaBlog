@@ -12,7 +12,7 @@
           </li>
           <li><small><%=pluralize(user.articles.count, "article") if user.articles %></small></li>
           <% if logged_in? && (user != current_user)%>
-            <li><%#= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
+            <li><%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
                 class: 'btn btn-xs btn-primary', method: :post %></li>
           <% end %>
           <% if logged_in? && current_user.admin? %>

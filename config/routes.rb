@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   
   get 'my_friends', to: 'users#my_friends'
   resources :friendships
+  
+  get 'search_friends', to: 'users#search'
+  
+  post 'add_friend', to: 'users#add_friend'
   #resources :articles gives us new resources path for those mayn get delete paths
   
   # root 'pages#home'
