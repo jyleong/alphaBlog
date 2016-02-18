@@ -1,6 +1,6 @@
 class FriendshipController < ApplicationController
   def destroy
-    debugger
+    
     @friendship = current_user.friendships.where(friend_id: params[:id]).first
     @friendship.destroy
     respond_to do |format|
