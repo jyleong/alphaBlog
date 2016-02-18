@@ -16,7 +16,7 @@
     <tbody>
       <% @friendships.each do |friend| %>
       <tr>
-        <td><%#= friend.full_name %></td>
+        <td><%= friend.username %></td>
         <td><%= friend.email %></td>
         <td><%= link_to "View profile", user_path(friend), class:"btn btn-primary btn-xs" %>
         <!--should be friendship path-->

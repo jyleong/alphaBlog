@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :categories, except: [:destroy]
   
   get 'my_friends', to: 'users#my_friends'
-  resources :friendships
+  resources :friendship
   
   get 'search_friends', to: 'users#search'
   
