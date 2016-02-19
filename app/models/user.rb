@@ -25,14 +25,15 @@ class User < ActiveRecord::Base
     
     param.strip!
     param.downcase!
-    email_matches(param).uniq
+    (username_matches(param) + email_matches(param)).uniq
     ##(first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
     ##must define thsese methods, object oriented programming, outsource parts of it
   end
   
-  # def self.first_name_matches(param)
-  #   matches('first_name', param)
-  # end
+  def self.username_matches(param)
+    
+    matches('username', param)
+  end
   
   # def self.last_name_matches(param)
   #   matches('last_name',param)
