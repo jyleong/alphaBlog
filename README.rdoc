@@ -1,6 +1,6 @@
 == README
 
-THe repository for the alphaBlog app made while following
+The repository for the alphaBlog app made while following
 the Complete Ruby on Rails Developer Course
 
 This project has taught me how a project is built and structured using Ruby
@@ -8,13 +8,13 @@ on Rails.
 
 Concepts that I have learned:
 
-The Ruby on Rails CRUD operations
-Database and database migration 
-the MVC architecture in Ruby on Rails
-the route structure of a Ruby on Rails controller and view setup
-The association models of Ruby on Rails
-production and deployment using Heroku
-Restricting actions on the UI and controller side of things
+* The Ruby on Rails CRUD operations
+* Database and database migration 
+* the MVC architecture in Ruby on Rails
+* the route structure of a Ruby on Rails controller and view setup
+* The association models of Ruby on Rails
+* production and deployment using Heroku
+* Restricting actions on the UI and controller side of things
 
 Some features of the alphaBlog:
 
